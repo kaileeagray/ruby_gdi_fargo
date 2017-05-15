@@ -30,125 +30,127 @@
             <img src="images/GDI_Fargo.png" class="img--bare" height="450px" />
             <div class="box--small">
               <h3><span class="green">Intro to Ruby</span></h3>
-              <h4><span class="blue">Class 1</span></h4>
+              <h4><span class="blue">Variables, Arithmetic, Methods, Objects, Errors</span></h4>
             </div>
           </section>
-
-          <!-- Homework Review - 10 min -->
           <section>
-            <h3>Install Discussion</h3>
-            <div class="left-align">
-            <p class="box">How was the install and playing with command line? Do you have any questions or concepts that you'd like to discuss?</p>
+            <!-- Homework Review - 10 min -->
+            <section>
+              <h3>Install Discussion</h3>
+              <div class="left-align">
+              <p class="box">How was the install and playing with command line? Do you have any questions or concepts that you'd like to discuss?</p>
 
-            <!--h6 class="grey">The Homework was:</h6>
-            <p class="box--small copy--xsmall"><strong>Practice:</strong> spend at least 20 minutes practicing navigating and creating/removing documents and directories with the command line.</p>
-            <p class="box--small copy--xsmall"><strong>Prep:</strong> Work through Code Academy's <a target="_blank" href="http://www.codecademy.com/courses/ruby-beginner-en-d1Ylq/0/1?curriculum_id=5059f8619189a5000201fbcb" alt="Code Academy">"Intro to Ruby"</a>. If you don't have previous programming experience, read Chapters 1 and 2 in <a target="_blank" href="https://pine.fm/LearnToProgram/?Chapter=01" alt="Learn to Program">Learn to Program</a> - don't try to do the exercises at the end, though. </p>
-            </div-->
+              <!--h6 class="grey">The Homework was:</h6>
+              <p class="box--small copy--xsmall"><strong>Practice:</strong> spend at least 20 minutes practicing navigating and creating/removing documents and directories with the command line.</p>
+              <p class="box--small copy--xsmall"><strong>Prep:</strong> Work through Code Academy's <a target="_blank" href="http://www.codecademy.com/courses/ruby-beginner-en-d1Ylq/0/1?curriculum_id=5059f8619189a5000201fbcb" alt="Code Academy">"Intro to Ruby"</a>. If you don't have previous programming experience, read Chapters 1 and 2 in <a target="_blank" href="https://pine.fm/LearnToProgram/?Chapter=01" alt="Learn to Program">Learn to Program</a> - don't try to do the exercises at the end, though. </p>
+              </div-->
+            </section>
+
+          <!-- Why Ruby -->
+            <section>
+              <h3>Why Ruby?</h3>
+              <ul class="list--tall box--small copy--small">
+                <li class="fragment">It reads like English. The syntax is intuitive.
+                  <pre style="height: 150px; overflow:hidden;"><code contenteditable class="ruby">
+                    # Java
+                    for(int i = 0; i &lt; 5; i++)
+
+                    # Ruby
+                    5.times do
+                  </code></pre>
+                </li>
+                <li class="fragment">The community is large, active and interested in helping others learn.</li>
+                <li class="fragment">You can get a web app off the ground quickly.</li>
+                <!--<li class="fragment">You can make a lucrative career out of it.</li>-->
+                <!--<li class="fragment">Using Ruby will cost you $0.</li>-->
+              </ul>
+            </section>
+
+            <section>
+              <h3>What is Ruby used for?</h3>
+              <ul class="list--tall box--small">
+                <li class="fragment">Web development (<a href="http://rubyonrails.org/">Rails</a>)</li>
+                <li class="fragment">iPhone &amp; Android apps (<a href="http://www.rubymotion.com/">RubyMotion</a>)</li>
+                <li class="fragment">System Administration (<a href="https://www.chef.io/chef/">Chef</a>)</li>
+                <li class="fragment">Testing (<a href="https://www.vagrantup.com/">Vagrant</a>)</li>
+                <li class="fragment">Security (<a href="http://www.metasploit.com/">Metasploit</a>)</li>
+              </ul>
+            </section>
+
+            <section>
+              <h3>Who is using Ruby?</h3>
+              <ul class="list--tall box--small">
+                <li><a href="http://www.hulu.com/">Hulu</a></li>
+                <li><a href="https://www.livingsocial.com/">LivingSocial</a></li>
+                <li><a href="http://www.groupon.com/">Groupon</a></li>
+                <li><a href="https://basecamp.com/">Basecamp</a></li>
+                <li><a href="https://github.com/">Github</a></li>
+                <li>#3 in 2015 on <a href="https://github.com/blog/2047-language-trends-on-github">github</a></li>
+                <li>More <a href="http://skillcrush.com/2015/02/02/37-rails-sites/">Success Stories</a></li>
+              </ul>
+            </section>
           </section>
 
-        <!-- Why Ruby -->
           <section>
-            <h3>Why Ruby?</h3>
-            <ul class="list--tall box--small copy--small">
-              <li class="fragment">It reads like English. The syntax is intuitive.
-                <pre style="height: 150px; overflow:hidden;"><code contenteditable class="ruby">
-                  # Java
-                  for(int i = 0; i &lt; 5; i++)
+            <!-- Basic IRB - 10 min -->
+            <section>
+              <h3>Working with Interactive Ruby Shell (IRB)</h3>
+              <ul class="list--tall box--small copy--small">
+                <li class="fragment">IRB is a <span class="green">command line interface</span> to Ruby that is installed along with Ruby. It works kind of like a calculator and is a great way to get started quickly.</li>
+                <li class="fragment"><strong>Open:</strong> In the terminal, type <code>irb</code></li>
+                <li class="fragment"><strong>Quit:</strong> Type <code>quit</code> and then press <code>enter</code></li>
+                <li class="fragment">Follow along with the examples in the slides ahead. Type them in!</li>
+                <li class="fragment">Feel free to explore as well. You will not accidentally break things.</li>
+              </ul>
+            </section>
 
-                  # Ruby
-                  5.times do
+            <!-- Arithmetic -->
+            <section>
+              <h3>Arithmetic</h3>
+              <p class="box">Try out some calculator functions</p>
+              <pre><code contenteditable class="ruby">
+                  3 + 4
+
+                  2 * 4
+
+                  6 - 2
+
+                  4 / 2
+
+                  4 /* 2
+                  => SyntaxError: (irb):10:syntax error, unexpected *
                 </code></pre>
-              </li>
-              <li class="fragment">The community is large, active and interested in helping others learn.</li>
-              <li class="fragment">You can get a web app off the ground quickly.</li>
-              <!--<li class="fragment">You can make a lucrative career out of it.</li>-->
-              <!--<li class="fragment">Using Ruby will cost you $0.</li>-->
-            </ul>
-          </section>
+            </section>
 
-          <section>
-            <h3>What is Ruby used for?</h3>
-            <ul class="list--tall box--small">
-              <li class="fragment">Web development (<a href="http://rubyonrails.org/">Rails</a>)</li>
-              <li class="fragment">iPhone &amp; Android apps (<a href="http://www.rubymotion.com/">RubyMotion</a>)</li>
-              <li class="fragment">System Administration (<a href="https://www.chef.io/chef/">Chef</a>)</li>
-              <li class="fragment">Testing (<a href="https://www.vagrantup.com/">Vagrant</a>)</li>
-              <li class="fragment">Security (<a href="http://www.metasploit.com/">Metasploit</a>)</li>
-            </ul>
-          </section>
+            <section>
+              <h3>Arithmetic</h3>
+              <p class="box">Other Ruby Math Operators</p>
+              <pre><code contenteditable class="ruby">
+                  11 % 5
+                  => 1 
 
-          <section>
-            <h3>Who is using Ruby?</h3>
-            <ul class="list--tall box--small">
-              <li><a href="http://www.hulu.com/">Hulu</a></li>
-              <li><a href="https://www.livingsocial.com/">LivingSocial</a></li>
-              <li><a href="http://www.groupon.com/">Groupon</a></li>
-              <li><a href="https://basecamp.com/">Basecamp</a></li>
-              <li><a href="https://github.com/">Github</a></li>
-              <li>#3 in 2015 on <a href="https://github.com/blog/2047-language-trends-on-github">github</a></li>
-              <li>More <a href="http://skillcrush.com/2015/02/02/37-rails-sites/">Success Stories</a></li>
-            </ul>
-          </section>
+                  2 ** 3
+                  => 8
 
-          <!-- Basic IRB - 10 min -->
-          <section>
-            <h3>Working with Interactive Ruby Shell (IRB)</h3>
-            <ul class="list--tall box--small copy--small">
-              <li class="fragment">IRB is a <span class="green">command line interface</span> to Ruby that is installed along with Ruby. It works kind of like a calculator and is a great way to get started quickly.</li>
-              <li class="fragment"><strong>Open:</strong> In the terminal, type <code>irb</code></li>
-              <li class="fragment"><strong>Quit:</strong> Type <code>quit</code> and then press <code>enter</code></li>
-              <li class="fragment">Follow along with the examples in the slides ahead. Type them in!</li>
-              <li class="fragment">Feel free to explore as well. You will not accidentally break things.</li>
-            </ul>
-          </section>
+                </code></pre>
+            </section>
 
-          <!-- Arithmetic -->
-          <section>
-            <h3>Arithmetic</h3>
-            <p class="box">Try out some calculator functions</p>
-            <pre><code contenteditable class="ruby">
-                3 + 4
-
-                2 * 4
-
-                6 - 2
-
-                4 / 2
-
-                4 /* 2
-                => SyntaxError: (irb):10:syntax error, unexpected *
-              </code></pre>
-          </section>
-
-          <section>
-            <h3>Arithmetic</h3>
-            <p class="box">Other Ruby Math Operators</p>
-            <pre><code contenteditable class="ruby">
-                11 % 5
-                => 1 
-
-                2 ** 3
-                => 8
-
-              </code></pre>
-          </section>
-
-          <section>
-            <h3>Errors are Neat!</h3>
-            <ul class="list--tall box--small copy--small">
-              <li class="fragment">There are different kinds of errors that can occur. We just saw the <strong>SyntaxError</strong> which often
-                helps us find misspelled words or missing quotes.
-              </li>
-              <li class="fragment box">Take time to read each Error. They often tell you how to fix the issue and can be a great
-                starting point when searching for help online.
-              </li>
-            </ul>
-            <pre class="fragment"><code contenteditable class="ruby">
-            irb> hi
-            NameError: undefined local variable or method `hi' for main:Object
-              </code></pre>
-          </section>
-
+            <section>
+              <h3>Errors are Neat!</h3>
+              <ul class="list--tall box--small copy--small">
+                <li class="fragment">There are different kinds of errors that can occur. We just saw the <strong>SyntaxError</strong> which often
+                  helps us find misspelled words or missing quotes.
+                </li>
+                <li class="fragment box">Take time to read each Error. They often tell you how to fix the issue and can be a great
+                  starting point when searching for help online.
+                </li>
+              </ul>
+              <pre class="fragment"><code contenteditable class="ruby">
+              irb> hi
+              NameError: undefined local variable or method 'hi' for main:Object
+                </code></pre>
+            </section>
+          </section>  
         <!-- Variables - 10 min -->
         <section>
           <section>
