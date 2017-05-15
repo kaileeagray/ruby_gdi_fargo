@@ -107,7 +107,7 @@
             <!-- Arithmetic -->
             <section>
               <h3>Arithmetic</h3>
-              <p class="box">Try out some calculator functions</p>
+              <p class="box">Try out some operators</p>
               <pre><code contenteditable class="ruby">
                   3 + 4
 
@@ -117,21 +117,9 @@
 
                   4 / 2
 
-                  4 /* 2
-                  => SyntaxError: (irb):10:syntax error, unexpected *
-                </code></pre>
-            </section>
-
-            <section>
-              <h3>Arithmetic</h3>
-              <p class="box">Other Ruby Math Operators</p>
-              <pre><code contenteditable class="ruby">
                   11 % 5
-                  => 1 
 
                   2 ** 3
-                  => 8
-
                 </code></pre>
             </section>
 
@@ -181,8 +169,8 @@
             <pre class="fragment"><code contenteditable class="ruby">
             # variables
             age = 50
-            _age = 50
-            _my_age = 50
+            your_age = 30
+            combined_age = age + your_age
 
             # constants
             PI = 3.14159
@@ -231,27 +219,38 @@
             1st_occupation = "software developer"
             </code></pre>
           </section>
-
-          <section>
-            <h3>Local Variable Values</h3>
-            <ul class="list--tall box--small copy--small">
-              <li class="fragment">No default value</li>
-              <li class="fragment">No type declaration</li>
-              <li class="fragment">Do not live forever</li>
-            </ul>
-            <pre class="fragment"><code contenteditable class="ruby">
-            # error
-            name
-
-            # defined, initalize, create
-            name = "KC"
-            defined?(name)
-            </code></pre>
-          </section>
         </section>
 
         <!-- Data Types - 10 min -->
         <section>
+          <section>
+            <h3>Methods</h3>
+            <ul class="list--tall box--small copy--small">
+              <li>A method in Ruby is a set of expressions that returns a value. Other languages sometimes refer to this as a function.</li>
+              <li> Ruby has many built in methods. We can also create our own methods.</li>
+              <li>The "." is an operator that connects the Object of the method to the method.</li>
+              <li>String Objects can <strong>reverse</strong>, for example.</li>
+              <li><a href="https://pine.fm/LearnToProgram/chap_05.html" target="_blank">"If objects (like strings, integers, and floats) are the nouns in the Ruby language, then methods are like the verbs."</a>"</li>
+            </ul>
+          </section>
+          <section>
+          <h3>Example methods</h3>
+            <pre><code contenteditable class="ruby">
+              irb> puts "hello"
+              hello
+              => nil
+
+              irb> "2".to_i
+              => 2
+
+              irb> 2.to_s
+              => "2"
+
+              irb> "2" / 5
+              NoMethodError: undefined method '/' for "2":String
+            </code></pre>
+            <p>We'll practice building our own methods on Wednesday!</p>
+          </section>
           <section>
             <h2>Data Types</h2>
             <p class="fragment">Numbers &nbsp; | &nbsp; Strings &nbsp; | &nbsp; Symbols &nbsp; | &nbsp; Booleans<br/>Regular Expressions &nbsp; | &nbsp; Arrays &nbsp; | &nbsp; Ranges &nbsp; | &nbsp; Hashes</p>
@@ -281,7 +280,7 @@
             <div  class="fragment">
             <p class="copy--small">Integers are either <strong>Fixnum</strong> or <strong>Bignum</strong>. They do not have decimals.</p>
             <p class="copy--small">Note: underscore characters are ignored in the digit string.</p>
-            <pre style="height: 230px; overflow: hidden;"><code contenteditable class="ruby">
+            <pre style="height: 250px; overflow: hidden;"><code contenteditable class="ruby">
               irb> 100000000000000000.class
                => Fixnum
               irb> 1_000_000_000_000_000_000.class
@@ -303,13 +302,15 @@
             </div>
           </section>
 
+
           <section>
-            <h3>Number Practice</h3>
+            <h3>Number and Method Practice</h3>
             <pre><code contenteditable class="ruby">
             7/8
             7.0/8.0
             3.14.to_s
             3.14.to_i
+            "2" * 5
             1 + "2"
             1 + "2".to_i
             (1 + 2) * 3
@@ -337,7 +338,7 @@
           </section>
 
           <section>
-            <h3>String Practice</h3>
+            <h3>String and Method Practice</h3>
             <pre><code contenteditable class="ruby">
             "Heather".upcase
             "Heather".downcase
@@ -409,48 +410,19 @@
         </section-->
 
         <!-- Methods -->
-        
-          <section>
-            <h3>Methods</h3>
-            <ul class="list--tall box--small copy--small">
-              <li class="fragment">Methods define the behavior for an Object.</li>
-              <li class="fragment">The "." is an operator that connects the Object of the method to the method.</li>
-              <li class="fragment">String Objects can <strong>reverse</strong>, for example.</li>
-              <li class="fragment">Let's call some methods</li>
-            </ul>
-            <pre class="fragment"><code contenteditable class="ruby">
-            irb> puts "hello"
-            hello
-            => nil
-
-            irb> "2".to_i
-            => 2
-
-            irb> 2.to_s
-            => "2"
-
-            irb> "2" / 5
-            NoMethodError: undefined method '/' for "2":String
-              </code></pre>
-          </section>
           <section>
             <h3>User Input</h3>
             <ul class="box--small list--tall copy--small">
-              <li class="fragment">To obtain user input, use <code>gets</code></li>
-              <li class="fragment">To print out information, use <code>puts</code></li>
-              <li class="fragment">Let's create our first program together</li>
+              <li>To obtain user input, use <code>gets</code></li>
+              <li>To print out information, use <code>puts</code></li>
+              <li>Let's create our first program together.</li>
+              <li>Type <code>touch name.rb</code> in Terminal.</li>
             </ul>
-            <div class="fragment"><p>Let's create name.rb</p></div>
-            <h4>This program should:</h4>
+            <h4 class="fragment">This program should:</h4>
             <ul class="box--small list--tall copy--small">
               <li class="fragment">Request the user's name</li>
-              <li class="fragment">Print out a greeting to user</li>
-              <li class="fragment">Let's create our first program together</li>
+              <li class="fragment">Print out a greeting to user that includes their name</li>
             </ul>
-            <div class="fragment"><p>Run your program from the command line:</p>
-                        <pre style="height: 80px; overflow:hidden"><code>
-                          ruby name.rb
-                        </code></pre></div>
           </section>
 
           <section>
@@ -500,11 +472,11 @@
                     <p class=""><small>@gdifar</small></p>
                     <hr>
                     <p><small>We are done with class 1!</small></p>
-                    <p><small>We have done a lot, I know you have questions so ask them!</small></p>
+                    <p><small>We have done a lot, ask questions!</small></p>
                 </div>
             <p class="copy--small box--small">
-              <a href="setup.html">Setup</a> &nbsp; | &nbsp;
-              <a href="class1.html">Class 1</a>
+              <a href="setup.html">Part 1: Intros and Setup</a> <br>
+              <a href="class1.html">Part 2: Ruby Party! Variables, Arithmetic, Methods, Objects, Errors</a>
             </p>
         </section>
       </div>
