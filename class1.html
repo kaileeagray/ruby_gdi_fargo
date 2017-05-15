@@ -143,8 +143,7 @@
           <section>
             <h3>Variables</h3>
             <ul class="list--tall box--small copy--small">
-              <li class="fragment">Variables are references to information.</li>
-              <li class="fragment">We reference variables by name.</li>
+              <li class="fragment">Variables label and store information.</li>
               <li class="fragment">They are called variables because the<br/>information they reference may change.</li>
             </ul>
             <pre class="fragment"><code contenteditable class="ruby">
@@ -158,35 +157,11 @@
           </section>
 
           <section>
-            <h3>Ruby's Variables and Constants</h3>
-            <ul class="list--tall box--small copy--small">
-              <li class="fragment">Ruby has variables, constants and literals.</li>
-              <li class="fragment">A variables starts with a lower case letter or an underscore character (_) and consists entirely of letters, numbers and underscores.</li>
-              <li class="fragment">Constants do not change and are typically in all caps.</li>
-              <li class="fragment">Literals are literal values, for example the number 3 or the string 'hi'</li>
-            </ul>
-            
-            <pre class="fragment"><code contenteditable class="ruby">
-            # variables
-            age = 50
-            your_age = 30
-            combined_age = age + your_age
-
-            # constants
-            PI = 3.14159
-
-            # literals
-            3
-            'hi'
-            </code></pre>
-          </section>
-
-          <section>
-            <h3>What can I do with a Variable?</h3>
-            <ul class="list--tall box--small copy--small">
-              <li class="fragment">Create - Initialize - Define</li>
-              <li class="fragment">Access - Read</li>
-              <li class="fragment">Assign - Replace</li>
+            <h3>What can I do with a variable?</h3>
+            <ul class="list--tall copy--small">
+              <li>Create - Initialize - Define</li>
+              <li>Access - Read</li>
+              <li>Assign - Replace</li>
             </ul>
             <pre class="fragment"><code contenteditable class="ruby ">
             # create and assign in one line
@@ -203,11 +178,11 @@
           <section>
             <h3>Variable naming</h3>
             <ul class="list--tall box--small copy--small">
-              <li class="fragment">Make it meaningful</li>
-              <li class="fragment">Make it easy to read</li>
-              <li class="fragment">Make it concise</li>
-              <li class="fragment">Should be unique</li>
-              <li class="fragment">Should be understood by someone who has no idea what your program does</li>
+              <li>Make it meaningful</li>
+              <li>Make it easy to read</li>
+              <li>Make it concise</li>
+              <li>Should be unique</li>
+              <li>Should be understood by someone who has no idea what your program does</li>
             </ul>
             <pre class="fragment" style="height: 230px; overflow: hidden;"><code contenteditable class="ruby ">
             # good
@@ -229,8 +204,7 @@
               <li>A method in Ruby is a set of expressions that returns a value. Other languages sometimes refer to this as a function.</li>
               <li> Ruby has many built in methods. We can also create our own methods.</li>
               <li>The "." is an operator that connects the Object of the method to the method.</li>
-              <li>String Objects can <strong>reverse</strong>, for example.</li>
-              <li><a href="https://pine.fm/LearnToProgram/chap_05.html" target="_blank">"If objects (like strings, integers, and floats) are the nouns in the Ruby language, then methods are like the verbs."</a>"</li>
+              <li>"If objects (like strings, integers, and floats) are the nouns in the Ruby language, then methods are like the verbs." from <a href="https://pine.fm/LearnToProgram/chap_05.html" target="_blank">Learn to Program</a></li>
             </ul>
           </section>
           <section>
@@ -253,11 +227,10 @@
           </section>
           <section>
             <h2>Data Types</h2>
-            <p class="fragment">Numbers &nbsp; | &nbsp; Strings &nbsp; | &nbsp; Symbols &nbsp; | &nbsp; Booleans<br/>Regular Expressions &nbsp; | &nbsp; Arrays &nbsp; | &nbsp; Ranges &nbsp; | &nbsp; Hashes</p>
+            <p>Numbers &nbsp; | &nbsp; Strings &nbsp; | &nbsp; Symbols &nbsp; | &nbsp; Booleans<br/>Regular Expressions &nbsp; | &nbsp; Arrays &nbsp; | &nbsp; Ranges &nbsp; | &nbsp; Hashes</p>
             <ul class="list--tall box--small copy--small">
-              <li class="fragment">Data always has a "type"</li>
-              <li class="fragment">You will hear the words Class/Type/Object used interchangeably</li>
-              <li class="fragment">Let's explore a few built in Objects</li>
+              <li>Data always has a "type"</li>
+              <li>You will hear the words Class/Type/Object used interchangeably</li>
             </ul>
             <pre class="fragment"><code contenteditable class="ruby">
             irb> 1.class
@@ -307,6 +280,7 @@
             <h3>Number and Method Practice</h3>
             <pre><code contenteditable class="ruby">
             7/8
+            7.to_f/8
             7.0/8.0
             3.14.to_s
             3.14.to_i
@@ -326,7 +300,6 @@
             b = "World"
             c = a + b
             c.reverse
-            => "dlroW olleH"
             </code></pre>
             <pre class="fragment" style="height: 150px; overflow:hidden;"><code contenteditable class="ruby ">
             a = "Spam "
