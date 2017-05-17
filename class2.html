@@ -641,7 +641,7 @@ string_words.join(" ")
               <p class="copy--small box--small">There are three main types:</p>
               <ul class="list--tall copy--small">
                 <li>Arrays</li>
-				<li>Ranges</li>                
+				        <li>Ranges</li>                
                 <li>Hashes</li>
               </ul>
               <pre style="height: 130px; overflow: hidden;"><code  class="ruby">
@@ -659,7 +659,6 @@ string_words.join(" ")
                         inclusive_range = (1..3)  # contains 1, 2, 3
                         exclusive_range = (1...3) # contains 1, 2
                         letter_range = ('a'..'e') # contains 'a', 'b', 'c', 'd', 'e'
-                        word_range = ('bar'..'bat').to_a #contains 'bar', 'bas, 'bat'
                         </code></pre></div>
             <p class="copy--small box--small">Ranges are simply the range of values between<br/>the given first and last elements.</p>
             <p class="copy--small box--small"><strong>Inclusive</strong> ranges have two dots, and include the last element.</p>
@@ -668,67 +667,8 @@ string_words.join(" ")
             <p class="copy--small box--small">Ranges need to be defined from lowest value to highest.</p>
           </section>
 
-          <section>
-            <h3>Ranges</h3>
-            <p class="copy--small box--small">Try out these range methods in IRB.</p>
-            <pre><code>
-            (1..99).max 					
-            (890..902).begin
-            (890..902).first(4)
-            (890..902).last(3)
-            (890..902).end
-            (28..22).min
-            
-            (22..28).to_a
-			
-            ('b'...'z').include?('j')
-            new_array[1..2] # returns the second and third elements
-            </code></pre>
-            <p class="copy--xsmall box--small">Learn more about ranges <a href="http://www.ruby-doc.org/core-2.1.1/Range.html" alt="Ruby Doc">here</a>.</p>
-          </section>
-			
-		  <section>
-			<h3>Using Ranges as Conditionals</h3>
-			<p class="copy--small box--small">The <code>my_range===value</code> does the same as <code>my_range.to_a.include?(value)</code></p>
-			<pre><code  class="ruby">
-			if ((1..10) === 5)
-			  puts "5 lies in (1..10)"
-			end
-
-			if (('a'..'j') === 'c')
-			  puts "c lies in ('a'..'j')"
-			end
-
-			if (('a'..'j') === 'z')
-			  puts "z lies in ('a'..'j')"
-			end
-            </code></pre>
-		  </section>
-          
-		   <section>
-			<h3>Looping through Ranges</h3>
-			<p class="copy--small box--small">Use the <code>each</code> loop to step through or iterate through ranges</p>
-			<pre  style="height: 120px; overflow:hidden" ><code  class="ruby">
-			# use the range operator to do 0 to 5 counts
-			(0..5).each do |i|
-			  puts "Loop number #{i}"
-			end
-
-            </code></pre>
-		  </section>
-		   <!-- Let's develop it: 10 minutes -->
-          <section>
-            <h3>Let's Develop It</h3>
-
-            <p class="copy--small box">Write a program that prints out every number<br/>between 1 and 1000 that is divisible by 7.</p>
-			<p class="copy--small box">Print out all the prime numbers <br/>between 1 and 1000.</p>
-            <p class="copy--xsmall box--small">Hint: the modulus operator, <code>%</code>, will be helpful.</p>
-          </section>
-		  </section>
-
 		  
           <!-- minutes-->
-		  <section>
           <section>
             <h3>Hashes</h3>
             <p class="copy--small box--small">Hashes have curly braces <code>{}</code> and "hash rockets" <code>=&gt;</code> and can be filled with any data type: fixnum, strings, even arrays and hashes. </p>
@@ -746,6 +686,7 @@ string_words.join(" ")
             </code></pre>
             <p class="copy--small box--small">Syntax:</p>
             <p><code>{ key => value, key => value }</code>
+            <p>Note: <a href="http://stackoverflow.com/questions/40512959/hash-rocket-vs-colon-in-render-json" target="_blank"> hash rockets vs colons</a></p>
           </section>
 
           <section>
@@ -912,6 +853,64 @@ string_words.join(" ")
               <a href="class2.html">Class 2</a> &nbsp; | &nbsp;   
             </p>
         </section>
+          <section>
+            <h3>If time: Ranges</h3>
+            <p class="copy--small box--small">Try out these range methods in IRB.</p>
+            <pre><code>
+            (1..99).max           
+            (890..902).begin
+            (890..902).first(4)
+            (890..902).last(3)
+            (890..902).end
+            (28..22).min
+            
+            (22..28).to_a
+      
+            ('b'...'z').include?('j')
+            new_array[1..2] # returns the second and third elements
+            </code></pre>
+            <p class="copy--xsmall box--small">Learn more about ranges <a href="http://www.ruby-doc.org/core-2.1.1/Range.html" alt="Ruby Doc">here</a>.</p>
+          </section>
+      
+      <section>
+      <h3>Using Ranges as Conditionals</h3>
+      <p class="copy--small box--small">The <code>my_range===value</code> does the same as <code>my_range.to_a.include?(value)</code></p>
+      <pre><code  class="ruby">
+      if ((1..10) === 5)
+        puts "5 lies in (1..10)"
+      end
+
+      if (('a'..'j') === 'c')
+        puts "c lies in ('a'..'j')"
+      end
+
+      if (('a'..'j') === 'z')
+        puts "z lies in ('a'..'j')"
+      end
+            </code></pre>
+      </section>
+          
+       <section>
+      <h3>Looping through Ranges</h3>
+      <p class="copy--small box--small">Use the <code>each</code> loop to step through or iterate through ranges</p>
+      <pre  style="height: 120px; overflow:hidden" ><code  class="ruby">
+      # use the range operator to do 0 to 5 counts
+      (0..5).each do |i|
+        puts "Loop number #{i}"
+      end
+
+            </code></pre>
+      </section>
+       <!-- Let's develop it: 10 minutes -->
+          <section>
+            <h3>Let's Develop It</h3>
+
+            <p class="copy--small box">Write a program that prints out every number<br/>between 1 and 1000 that is divisible by 7.</p>
+      <p class="copy--small box">Print out all the prime numbers <br/>between 1 and 1000.</p>
+            <p class="copy--xsmall box--small">Hint: the modulus operator, <code>%</code>, will be helpful.</p>
+          </section>
+      </section>
+
         </section>
       </div>
 
