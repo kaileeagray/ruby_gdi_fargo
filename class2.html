@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Intro to Ruby : Class 2 ~ Girl Develop It</title>
+    <title>Intro to Ruby: Class 2 | Girl Develop It</title>
 
     <meta name="description" content="This is the official Girl Develop It Core Intro to Ruby course. The course is meant to be taught in four two-hour sessions. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
     <meta name="author" content="Girl Develop It">
@@ -15,8 +15,12 @@
     <link rel="stylesheet" href="css/theme/gdi-sass.css" id="theme">
     <link rel="stylesheet" href="lib/css/light.css">
     <link rel="stylesheet" href="css/print/pdf.css" media="print">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <script src="lib/js/head.min.js"></script>
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
 
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
@@ -28,22 +32,20 @@
         <section>
           <!-- Welcome & Intros - 20 min -->
           <section>
-            <img src="images/gdi-dayton-logo.png" class="img--bare" height="450px" />
+            <img src="images/GDI_Fargo.png" class="img--bare" height="450px" />
             <div class="box--small">
               <h3><span class="green">Intro to Ruby</span></h3>
               <h4><span class="blue">Class 2</span></h4>
-              <p class=""><small>@gdidayton &nbsp; | &nbsp; #GDIDAY3</small></p>
-               <p><small>Check in on the <a href="https://gdidayton.slack.com/messages/ruby/details/">#ruby</a> slack channel</small>
             </div>
           </section>
 
           <section>
               <h3>Welcome!</h3>
               <!-- <p class="box"><strong>Girl Develop It</strong> is here to empower and assist women interested in getting into and advancing in the tech industry through affordable and accessible programs.</p> -->
-              <p class="box"><strong>Girl Develop It</strong> is here to provide affordable programs for adult women interested in learning web and software development in a judgment-free environment.</p>
-
+              <p class="copy--small"><strong>Girl Develop It</strong> is here to provide affordable programs for adult women interested in learning web and software development in a judgment-free environment.</p>
+              <br>
               <div class="copy--small">
-                  <h4 class="green">Some "rules"</h4>
+                  <h3 class="green">Rules!</h3>
                   <ul>
                       <li>We are here for you!</li>
                       <li>Every question is important.</li>
@@ -51,59 +53,85 @@
                       <li><strong>Have fun!</strong></li>
                   </ul>
               </div>
+              <br>
+              <h3>MINSWAN <a href="https://changelog.com/podcast/202" target="_blank"><img src="images/matz.jpg" class="img--bare" height="50px"/></a></h3>
 
               <p class="box copy--small"><small><strong>Girl Develop It is dedicated to providing a harrasment free learning experience for <em>everyone</em>.</strong><br/>For more information, see our <a href="http://www.girldevelopit.com/code-of-conduct" target="_blank">Code of Conduct</a>.</small></p>
           </section>
-
+          <section>
+            <h3>We're here to help!</h3>
+            <br>
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="images/kg_steve.jpg" alt="Kailee" width="250"/><br>
+                <div><strong>Kailee</strong></div>
+              </div>
+              <div class="col-lg-6">
+                <img src="images/baron.jpg" alt="Baron Hines" width="250"/><br>
+                <div><strong>Baron</strong></div>
+              </div>
+              <br>
+            </div>
+          </section>
           <!-- Homework Review - 10 min -->
           <section>
             <h3>Homework Discussion</h3>
-            <p class="box">How was last week's homework?</p>
-            <p class="box copy--small">Do you have any questions or concepts that you'd like to discuss?</p>
-            <h6 class="grey">The Homework was:</h6>
-             <p class="box--small copy--small left-align"><strong>Practice:</strong> Write a command line program that asks the user for the year they were born, then calculates their age in years, days, and seconds. Tell the user how old they are in these different formats. (Note: you'll be using <code>gets</code> and <code>puts</code> in this program, along with some math)</p>
-            <p class="box--small copy--small left-align">Temperature conversion! Make a program that asks the user for the temperature in Fahrenheit and print out the temperature in Celsius and Kelvins.</p>
+            <p class="box--small copy--small left-align">
+            <a href="https://github.com/kaileeagray/ruby_gdi_far_files/blob/master/age_calc.rb" target="_blank">Solution</a> <br>Write a command line program that asks the user for the year they were born, then calculates their age in years, days, and seconds. Tell the user how old they are in these different formats. (Note: you'll be using <code>gets</code> and <code>puts</code> in this program, along with some math). </p>
 
+            <p class="box--small copy--small left-align"><a href="https://github.com/kaileeagray/ruby_gdi_far_files/blob/master/temp_conv.rb" target="_blank">Solution</a> <br>Temperature conversion! Make a program that asks the user for the temperature in Fahrenheit and print out the temperature in Celsius and Kelvins.
+            </p>
+            <h4 class="grey">Challenge! Make these solutions better!</h4>
           </section>
 
           <section>
               <h3>Review</h3>
               <ul class="list--xtall box--small">
-                  <li>Lots of math</li>
-				  <li>Variables, constants, literals</li>
-                  <li>Data types: Numbers (fixnum), Strings</li>
-                  <li>Text editor, command line, and ruby shell</li>
+                <li>Math!</li>
+				        <li>Variables</li>
+                <li>Data types: numbers (fixnum, bignum, float), strings</li>
+                <li>Text editor, command line, and IRB</li>
               </ul>
           </section>
 
           <section>
+              <h3>Check In</h3>
+              <ul class="list--xtall box--small copy--small">
+                <li>How are you? Confused? Good! You should be. That means you are progressing.</li>
+                <li>Programming is hard and takes time.</li>
+                <li>My goal is to force you to code as much as possible.</li>
+                <li>Anyone freakin' over PowerShell or Terminal? If you want to try something different, you can totally do almost everything <a href="https://repl.it/languages/ruby" target="_blank">here</a>. Save your stuff there too!</li>
+              </ul>
+          </section>          
+
+          <section>
               <h3>What we will cover today</h3>
               <ul class="list--xtall box--small copy--small">
-				  <li class ="fragment">More things with Strings</li>
-				  <li class ="fragment">Some new data types: Arrays, Booleans, Ranges and Hashes</li>
-                  <li class ="fragment">Controlling the flow of our programs with Conditionals and Loops</li>
+				        <li>More fun with strings</li>
+				        <li>Arrays, Booleans, Ranges and Hashes</li>
+                <li>Flowing with conditionals and loops</li>
+                <li>Sneak peak <a href="https://github.com/kaileeagray/ruby_gdi_far_files/blob/master/name_city_state.rb" target="_blank">here</a>! You'll need <a href="https://github.com/kaileeagray/ruby_gdi_far_files/blob/master/states.rb" target="_blank">this too</a>.</li>
               </ul>
           </section>
         </section>
 
-		<!--Strings and arrays-->
-		<section>
-		<section>
-			 <h3>Some more on Strings</h3>
-			 <pre><code contenteditable class="ruby" >
-				new_string = "The quick brown fox"
-				
-				new_string[0]
-				=> "T"
+		    <!--Strings and arrays-->
+		    <section>
+		      <section>
+			      <h3>Let's do more with strings!</h3>
+		        <pre><code class="ruby" >
+new_string = "The quick brown fox"
 
-				new_string.split(" ")
-				(irb)>>["The", "quick", "brown","fox"]				
-					
-				["The", "quick", "brown","fox"].join(" ")
-				(irb)>>"The quick brown fox"
-              </code></pre>
-		</section>
-		<section>
+new_string[0]
+
+string_words = new_string.split(" ")
+
+string_words.join(" ")
+
+            </code></pre>
+		      </section>
+
+		      <section>
               <h3>Arrays</h3>
               <p class="copy--small box--small">Arrays have square brackets <code>[]</code> and can be filled with any type of object: fixnum, strings, even other arrays or hashes.</p>
               <pre><code  class="ruby">
@@ -206,38 +234,44 @@
 
           <section>
               <h3>Boolean Expressions</h3>
-              <p class="box copy--small">Code that compares values and returns True or False is called a <strong>Boolean expression</strong></p>
+              <p class="box copy--small"><strong>logical statements that returns true or false</strong></p>
               <ul  class="list--tall copy--small">
-                  <li>Test for equality by using <code>==</code>. (<code>=</code> is used for assignment)</li>
-                  <li>Test for greater than and less than using <code>&gt;</code> and <code>&lt;</code></li>
+                  <li>Test for equality by using <code>==</code></li>
+                  <li>Careful, remember that <code>=</code> is used for assignment</li>
+                  <li>Test for greater than using <code>&gt;</code></li>
+                  <li>Test for less than using <code>&lt;</code></li>
               </ul>
-               <table class="box copy--small">
-                  <tr>
-                      <td width="200"><code>a == b</code></td>
-                      <td>a is equal to b</td>
-                  </tr>
-                  <tr>
-                      <td><code>a != b</code></td>
-                      <td>a does not equal b</td>
-                  </tr>
-                  <tr>
-                      <td><code>a &lt; b</code></td>
-                      <td>a is less than b</td>
-                  </tr>
-                  <tr>
-                      <td><code>a &gt; b</code></td>
-                      <td>a is greater than b</td>
-                  </tr>
-                  <tr>
-                      <td><code>a &lt;= b</code></td>
-                      <td>a is less than or equal to b</td>
-                  </tr>
-                  <tr>
-                      <td><code>a &gt;= b</code></td>
-                      <td>a is greater than or equal to b</td>
-                  </tr>
-              </table>
-              <p class="copy--xsmall box--small">Learn more about logical operators in Ruby <a href="http://www.tutorialspoint.com/ruby/ruby_operators.htm" alt="Operators tutorial">here</a>.</p>
+          </section>
+
+          <section>
+            <h3 class="left-align">Boolean Expressions</h3>
+             <table class="box--small copy--small">
+                <tr>
+                    <td width="250"><code>a == b</code></td>
+                    <td>a is equal to b</td>
+                </tr>
+                <tr>
+                    <td><code>a != b</code></td>
+                    <td>a does not equal b</td>
+                </tr>
+                <tr>
+                    <td><code>a &lt; b</code></td>
+                    <td>a is less than b</td>
+                </tr>
+                <tr>
+                    <td><code>a &gt; b</code></td>
+                    <td>a is greater than b</td>
+                </tr>
+                <tr>
+                    <td><code>a &lt;= b</code></td>
+                    <td>a is less than or equal to b</td>
+                </tr>
+                <tr>
+                    <td><code>a &gt;= b</code></td>
+                    <td>a is greater than or equal to b</td>
+                </tr>
+            </table>
+            <p class="copy--small box">Learn more about operators in Ruby <a href="http://www.tutorialspoint.com/ruby/ruby_operators.htm" alt="Operators tutorial" target="_blank">here</a>. <br>Read more about logic in Ruby <a href="https://learnrubythehardway.org/book/ex27.html" target="_blank">here</a>.</p>
           </section>
 
           <section>
@@ -367,13 +401,13 @@
 					puts "I am a fortune-teller.  Tell me your name:"
 					name = gets.chomp
 					if name == "Chris"
-						puts "I see great things in your future."
+					  puts "I see great things in your future."
 					else
-						puts "Your future is... Oh my!  Look at the time!"
-						puts "I really have to go, sorry!"
+					  puts "Your future is... Oh my!  Look at the time!"
+					  puts "I really have to go, sorry!"
 					end
               </code></pre>
-			  <p class="copy--small box--xsmall">Notice: indenting doesn't matter but it sure is <a href="https://github.com/styleguide/ruby">pretty</a>!</p>
+			  <p class="copy--small box--xsmall">Notice! <a href="https://github.com/styleguide/ruby">indentation, formatting</a>!</p>
           </section>
 
           <section>
@@ -398,7 +432,7 @@
           </section>
 
           <section>
-              <h3>Branching: Chaining and Nesting conditionals</h3>
+              <h4>Chaining and Nesting Conditionals</h4>
               <p class="copy--xsmall box--small">You can extend conditionals to make more decisions or branches</p>
               <p class="copy--xsmall box--small">Chained conditionals use <code>elsif</code> to test if additional statements are true.<br/>The single <code>else</code> action will only happen if all preceding conditions are false.</p>
         <p class="copy--xsmall box--small">Nested conditions are simply more conditions inside your conditional (yo dog...)</p>
@@ -859,27 +893,23 @@
 			<section>
 			<h3>Homework, BONUS.</h3>
               <p class="copy--small box">Extend your Deaf Grandma program: What if grandma doesn't want you to leave? When you shout <code>BYE</code>, she could pretend not to hear you. Change your previous program so that you have to shout <code>'BYE'</code> three times in a row. Make sure to test your program: if you shout <code>'BYE'</code> three times, but not in a row, you should still be talking to grandma.</p>
-			
+			         <p>Do more boolean practice <a href="https://learnrubythehardway.org/book/ex28.html" target="_blanks">here</a>.</p>
             </section>
 			
 		</section>
 
           <section>
-                <img src="images/gdi-dayton-logo.png" class="img--bare" height="300px" />
+                <img src="images/GDI_Fargo.png" class="img--bare" height="300px" />
                 <div class="box--small">
                     <h3 class="event__title">Intro to Programming in Ruby</h3>
-                    <p class=""><small>@gdidayton &nbsp; | &nbsp; #GDIDAY3</small></p>
                     <hr>
                     <p><small>We are done with class 2!</small></p>
-                    <p><small>We have done a lot, I know you have questions so ask them!</small></p>
-                     <p><small>Check in on the <a href="https://gdidayton.slack.com/messages/ruby/details/">#ruby</a> slack channel</small>
+                    <p><small>We have done a lot, let me know if you have questions!</small></p>
                 </div>
             <p class="copy--small box--small">
               <a href="setup.html">Setup</a> &nbsp; | &nbsp;
               <a href="class1.html">Class 1</a> &nbsp; | &nbsp;
-              <a href="class2.html">Class 2</a> &nbsp; | &nbsp;
-              <a href="class3.html">Class 3</a> &nbsp; | &nbsp;
-              <a href="class4.html">Class 4</a>
+              <a href="class2.html">Class 2</a> &nbsp; | &nbsp;   
             </p>
         </section>
         </section>
@@ -887,7 +917,7 @@
 
       <footer>
         <div class="copyright">
-          Intro to Ruby ~ GDI Dayton ~
+          Intro to Ruby | GDI Fargo
           <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
         </div>
       </footer>
