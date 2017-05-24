@@ -246,8 +246,8 @@
 
           <section>
               <h3>Refactoring a Class</h3>
-              <p class="copy--small box--small">What is the result of calling the <code>showing</code> method on a newly-created, un-rolled Die object?</p>
-              <p class="copy--small box--small">We can avoid this by calling the <code>roll</code> method as part of the creation of a new instance of Die. <br>
+              <p class="copy--small box--small">What is the result of calling the <code>showing</code> method on a newly-created, un-rolled Die object?
+              We can avoid this by calling the <code>roll</code> method as part of the creation of a new instance of Die. <br> <br>
               <strong>Let's add the <code>initialize</code> method to <code>Die</code></strong>
               </p>
               <pre><code class="ruby fragment"> 
@@ -336,8 +336,14 @@
 
           <section>
             <h3>Inheritance</h3>
-            <p class="copy--small box--small">Denote that Elf inherits from Character by using the <code>&lt;</code> symbol</p>
-            <pre><code class="ruby">
+            <p class="copy--small box--small">Let's make an Elf!</p>
+              <ol class="copy--small box--small">
+                <li>Start by creating a new file <code>elf.rb</code> </li>
+                <li>create a class <code>Elf</code> that inherits from <code>Character</code></li>
+                <li>Add a method. Ideas?</li>
+                <li>What happens if we add a <code>heal</code> method to <code>Elf</code>? Let's try!</li>
+              </ol>
+<!--             <pre><code class="ruby">
             # in character.rb, after Character class code
             class Elf < Character
               def twinkle
@@ -350,8 +356,8 @@
             me = Elf.new("Cheri")
             me.adventure
             me.twinkle
-            </code></pre>
-            <p class="copy--small box--small">Notice that the initialize method was also inherited, as our new Elf knows its name and started off with 10 health.</p>
+            </code></pre> --><!-- 
+            <p class="copy--small box--small">Notice that the initialize method was also inherited, as our new Elf knows its name and started off with 10 health.</p> -->
           </section>
 
           <section>
@@ -375,9 +381,11 @@
               me = Elf.new("Cheri")
               me.heal
               </code></pre>
-              <p class="copy--xsmall box--small">More information about inheritance can be found <a href="http://rubylearning.com/satishtalim/ruby_inheritance.html" alt="rubylearning.com">here</a>.</p>
+              <p class="copy--xsmall box--small">More information about inheritance can be found <a href="http://rubylearning.com/satishtalim/ruby_inheritance.html" alt="rubylearning.com" target="_blank">here</a>.</p>
           </section>
+        </section>
 
+        <section>
           <section>
               <h3>Putting it all together</h3>
               <p class="copy--small box">For a command line program, you need these pieces:</p>
@@ -443,9 +451,7 @@
                   <li>Maybe the user's progress will be dependent on outcome of dice-rolling?</li>
               </ul>
           </section>
-        </section>
-
-        <section>
+        
           <section>
               <h3>Questions?</h3>
           </section>
