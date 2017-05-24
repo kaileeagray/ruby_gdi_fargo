@@ -387,38 +387,29 @@
 
         <section>
           <section>
-              <h3>Putting it all together</h3>
+              <h3>Let's create a command line program!</h3>
               <p class="copy--small box">For a command line program, you need these pieces:</p>
               <ol class="list--tall copy--small">
-                <li>File(s) containing your class definitions</li>
+                <li>File(s) containing your classes</li>
                 <li>A file containing your program, which <code>require</code>s the class file(s)</li>
-                <li>To call the program file from the command line (not IRB)</li>
+                <li>Call the program file from the command line (not IRB)</li>
               </ol>
           </section>
 
           <section>
-              <h3>Putting it all together</h3>
-              <p class="copy--small box--small">The file containing your class definitions, here called character.rb: </p>
-              <pre><code contenteditable class="ruby">
-              # character.rb
-
-              class Character
-                # contents of class here
-              end
-
-              class Elf < Character
-                # contents of class here
-              end
-                    </code></pre>
+              <h3>Set up the project folder</h3>
+              <p class="copy--small box--small">Create a folder <code>gdi_game</code>. Add the files containing your class definitions, <code>character.rb</code>, <code>elf.rb</code>, and any other characters you created. </p>
           </section>
 
           <section>
             <h3>Putting it all together</h3>
-            <p class="copy--small box--small">The file containing your program, here called adventure.rb, which will run from the command line and requires the class file: </p>
+            <p class="copy--small box--small">Create a file <code>adventure.rb</code>, which we can run from the command line to begin our game: </p>
             <pre><code contenteditable class="ruby">
             # adventure.rb
 
             require_relative 'character.rb'
+            require_relative 'elf.rb'
+
               #file path relative to the location of adventure.rb file
             require_relative 'die.rb'
 
@@ -430,7 +421,7 @@
           </section>
 
           <section>
-            <h3>Putting it all together</h3>
+            <h3>Try it!</h3>
             <p class="copy--small box--small">Call the program file from the command line: </p>
             <pre><code contenteditable class="ruby">
               #in command line
@@ -451,7 +442,7 @@
                   <li>Maybe the user's progress will be dependent on outcome of dice-rolling?</li>
               </ul>
           </section>
-        
+
           <section>
               <h3>Questions?</h3>
           </section>
@@ -491,7 +482,6 @@
           <section>
             <h3>Homework</h3>
             <p class="box copy--small left-align"><strong>Practice:</strong>  Make your final project even bigger and better! BONUS: Post it someplace so we can all play it!</p>
-            <p class="box copy--small left-align">If you're taking this class as part of a job plan, attend a <a href="http://www.meetup.com/daytonrb/" alt="Dayton Ruby Brigade">Dayton Ruby Brigage</a> or <a href="http://www.meetup.com/Dayton-Dynamic-Languages-User-Group/" alt="Dayton Dynamic Languages">Dayton Dynamic Languages</a> meet ups and talk to a couple of strangers about what you've learned and what you're excited about doing with programming.</p>
           </section>
 
          <section>
@@ -500,7 +490,9 @@
                     <h3 class="event__title">Intro to Programming in Ruby</h3>
                     <hr>
                     <p><small>We are done! You are all offically programmers!</small></p>
-                    <p><small>We have done a lot, I know you have questions so ask them!</small></p>
+                    <p><small>Feel free to email me at kaileeagray@gmail.com</small></p>
+                    <p><small>Contact Baron at kaileeagray@gmail.com</small></p>
+                    <p><small>Contact Brian at kaileeagray@gmail.com</small></p>
                 </div>
             <p class="copy--small box--small">
               <a href="setup.html">Setup</a> &nbsp; | &nbsp;
