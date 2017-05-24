@@ -30,7 +30,7 @@
         <section>
           <!-- Welcome & Intros - 20 min -->
           <section>
-            <img src="images/GDI_fargo.png" class="img--bare" height="450px" />
+            <img src="images/GDI_Fargo.png" class="img--bare" height="450px" />
             <div class="box--small">
               <h3><span class="green">Intro to Ruby</span></h3>
               <h4><span class="blue">Class 4</span></h4>
@@ -103,15 +103,27 @@
             end
              </code></pre>
           </section-->
-            <section>
-              <h3>Review</h3>
-              <ul class="copy--small box--small">
-                  <li>Methods</li>
-                  <li>Objects</li>
-                  <li>Classes</li>
-              </ul>
-              <p class="copy--small box--small">Any questions?</p>
-            </section>
+          <section>
+            <h3>Review</h3>
+            <ul class="copy--small box--small">
+                <li>Methods</li>
+                <li>Objects</li>
+                <li>Classes</li>
+            </ul>
+            <p class="copy--small box--small">Any questions?</p>
+          </section>
+
+<!--           <section>
+            <h4><code>.chomp</code> vs <code>.chomp!</code></h4>
+            <a href="https://ruby-doc.org/core-2.2.0/String.html">check out documentation</a>
+            <p>
+              <strong>chomp → new_str</strong> <br>
+            </p>
+            <p>
+            <strong>chomp! → str or nil</strong> <br>
+            </p>
+          </section> -->
+
           <section>
             <h4>Creating a Method Checklist from <a href="https://learnrubythehardway.org/book/ex18.html" target="_blank">Learn Ruby the Hard Way</a></h4>
             <ul class="copy--small box--small">
@@ -185,8 +197,15 @@
           <!-- Creating a class: 20 minutes -->
           <section>
               <h3>Creating a Class</h3>
-              <p class="copy--small box--small">It's very easy to create your own classes in Ruby.</p>
-              <pre><code contenteditable class="ruby">
+              <p class="copy--small box--small">Let's practice creating your own classes in Ruby. Start by creating a new file <code>die.rb</code>.</p>
+              <ol class="copy--small box--small">
+                <li>create a class <code>Die</code></li>
+                <li>create a method <code>roll</code> with an <a href="http://ruby-for-beginners.rubymonstas.org/writing_classes/instance_variables.html" target="_blank">instance variable</a> <code>@numberShowing</code></li>
+                <li>let <code>@numberShowing</code> equal a random number between 0-5</li>
+                <li>create a method showing that returns <code>@numberShowing</code></li>
+              </ol> <br> <br>
+              <p>Note: Instance variables live in, and are visible everywhere in the object’s scope.</p>
+<!--               <pre><code contenteditable class="ruby">
               # die.rb
               class Die
 
@@ -201,11 +220,11 @@
 
               end
               </code></pre>
-              <p class="copy--small box--small">Inside the class, define its methods.</p>
+              <p class="copy--small box--small">Inside the class, define its methods.</p> -->
           </section>
 
           <section>
-                <h3>Creating a Class</h3>
+                <h3>Using <code>Die</code> Class</h3>
                 <p class="copy--small box--small">You can use your class right away by loading it into IRB.</p>
                 <pre style="height: 160px; overflow: hidden"><code>
                 #in irb
@@ -219,10 +238,19 @@
           </section>
 
           <section>
+            <h5>This will be handy: <code>initialize</code> (<a href="http://ruby-for-beginners.rubymonstas.org/writing_classes/initializers.html" target="_blank">source</a>)</h5>
+            <p class="copy--small box--small"><strong><code>initialize</code> is a special method with a special meaning in Ruby classes</strong> <br><br>Whenever you call the method <code>new</code> on a class, the class will create a new instance of itself. <br>Internally, the class will call the method <code>initialize</code> on the new object.</p>
+            <p class="copy--small box--small">Let's add the <code>initialize</code> method to our <code>Die</code> class &rarr;</p>
+
+          </section>
+
+          <section>
               <h3>Refactoring a Class</h3>
               <p class="copy--small box--small">What is the result of calling the <code>showing</code> method on a newly-created, un-rolled Die object?</p>
-              <p class="copy--small box--small">We can avoid this by calling the <code>roll</code> method as part of the creation of a new instance of Die.</p>
-              <pre><code class="ruby">
+              <p class="copy--small box--small">We can avoid this by calling the <code>roll</code> method as part of the creation of a new instance of Die. <br>
+              <strong>Let's add the <code>initialize</code> method to <code>Die</code></strong>
+              </p>
+              <pre><code class="ruby fragment"> 
               # die.rb
               class Die
 
@@ -461,7 +489,7 @@
           </section>
 
          <section>
-                <img src="images/GDI_fargo.png" class="img--bare" height="300px" />
+                <img src="images/GDI_Fargo.png" class="img--bare" height="300px" />
                 <div class="box--small">
                     <h3 class="event__title">Intro to Programming in Ruby</h3>
                     <hr>
